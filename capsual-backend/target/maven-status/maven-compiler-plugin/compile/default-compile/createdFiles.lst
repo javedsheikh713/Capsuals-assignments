@@ -1,0 +1,15 @@
+fse\capsual\assignment\response\Response.class
+fse\capsual\assignment\resource\TaskManagerResource.class
+fse\capsual\assignment\common\AppConstants.class
+fse\capsual\assignment\repository\ParentTaskRepository.class
+fse\capsual\assignment\service\TaskManagerService.class
+fse\capsual\assignment\exception\AppException.class
+fse\capsual\assignment\repository\TaskManagerRepository.class
+fse\capsual\assignment\TaskManager.class
+fse\capsual\assignment\common\ErrorData.class
+fse\capsual\assignment\entity\Task.class
+fse\capsual\assignment\response\TaskListResponse.class
+fse\capsual\assignment\exception\ErrorHandler.class
+fse\capsual\assignment\filter\MyFilter.class
+fse\capsual\assignment\entity\ParentTask.class
+fse\capsual\assignment\exception\ErrorCodes.class

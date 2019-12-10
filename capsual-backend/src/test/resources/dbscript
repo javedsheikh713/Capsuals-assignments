@@ -1,0 +1,29 @@
+ CREATE TABLE task ( id bigint(11) NOT NULL AUTO_INCREMENT,
+  parentid bigint(20) DEFAULT NULL ,
+  task varchar(45) UNIQUE,
+  start_date datetime DEFAULT NULL,
+  end_date datetime DEFAULT NULL,
+  priority int(11) DEFAULT NULL,
+  task_ended boolean default false,
+  PRIMARY KEY (id),
+  FOREIGN KEY(parentid) references parent_task(id)
+) ;
+
+
+ CREATE TABLE task ( id bigint(11) NOT NULL AUTO_INCREMENT,
+  parentid int(11) DEFAULT NULL,
+  task varchar(45) UNIQUE,
+  start_date datetime DEFAULT NULL,
+  end_date datetime DEFAULT NULL,
+  priority int(11) DEFAULT NULL,
+  task_ended boolean default false,
+  PRIMARY KEY (id),
+  FOREIGN KEY(parentid) references parent_task(id)
+) ;
+
+
+CREATE TABLE parent_task (
+  id int(11) NOT NULL AUTO_INCREMENT,
+  parenttask varchar(45) UNIQUE,
+  PRIMARY KEY (id)
+) 
